@@ -5,7 +5,7 @@ import io.gatling.http.Predef._
 
 class VideoGameFullTestTemplate extends Simulation {
 
-  val httpConf = http.baseUrl("http://localhost:8080/app/")
+  val httpConf = http.baseUrl("http://localhost:9999/app/")
     .header("Accept", "application/json")
     .proxy(Proxy("localhost", 8888))
 
